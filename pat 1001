@@ -7,13 +7,13 @@ int main() {
 	scanf_s("%d", &T);
 	while (T--)
 	{
-		long long a, b, c;//±ØÐëÓÃlong long ´æ´¢abc
+		long long a, b, c;//å¿…é¡»ç”¨long long å­˜å‚¨abc
 		scanf_s("%lld%lld%lld", &a, &b, &c);
 		long long t = a + b;
 		bool flag;
-		if (a > 0 && b > 0 && t < 0)	flag = true; //ÕýÒç³ö
-		else if (a < 0 && b < 0 && t >= 0)	flag = false;//¸ºÒç³ö
-		else if (t > c)	flag = true;  //Î´Òç³ö
+		if (a > 0 && b > 0 && t < 0)	flag = true; //æ­£æº¢å‡º
+		else if (a < 0 && b < 0 && t >= 0)	flag = false;//è´Ÿæº¢å‡º
+		else if (t > c)	flag = true;  //æœªæº¢å‡º
 		else flag = false;
 		
 		if (flag) printf("Case #%d: true\n", num++);
